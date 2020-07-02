@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="css/custom_style.css">
+
+      
+    </head>
+    <body>
+        <center>
+        <header id="header">
+            <nav id="nav-bar">
+            <h1>Product Page</h1>  
+            <img id="header-img" <img src="Images/logo.png" alt="logo"><br>
+            <a class="nav-link" href="#learn-more"> Learn More</a>
+            <a class="nav-link" href="#request-coupon">Request Coupons</a>
+            <a class="nav-link" href="#buy-on-amazon">Buy on Online Store</a>
+            </nav>
+        </header> 
+        <section id="learn-more">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/UM0Ny-n25aA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="request-coupon">
+            <h2>Request a Coupon</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" placeholder="firstname.lastname@email.com" name="email"></input>
+                <input id="submit" type="submit"></input>
+            </form>
+        </section>
+        <section id="buy-on-amazon">
+            <div class="flex-container">
+                <div><a href="/amazon-affiliate-link">Buy on Amazon</a></div>
+                <div><a href="/amazon-affiliate-link">Buy on Best Buy</a></div>
+                <div><a href="/amazon-affiliate-link">Buy on Offerup</a></div>
+            </div>
+        </section>
+        </center>
+    </body>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("header");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
+</html>
+
+
+
